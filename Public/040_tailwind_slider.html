@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/tailwind.css" />
+    <title>Tailwind Slider</title>
+  </head>
+  <body class="bg-gray-900 font-sans leading-normal tracking-normal">
+    <header class="header relative overflow-hidden">
+      <nav
+        class="bg-gray-800 w-full p-6 z-10 top-0 flex flex-wrap flex-row justify-between items-center bg-opacity-50"
+      >
+        <div class="flex flex-row items-center flex-shrink-0 text-white">
+          <img src="img/Logo.png" class="w-8" alt="" />
+          <a class="uppercase pl-3 font-normal text-2xl" href="#"
+            >Dulguun Digital</a
+          >
+        </div>
+        <div class="block lg:hidden">
+          <button
+            id="nav-toggle"
+            class="border rounded-full text-gray-400 p-2 border-gray-500 hover:text-white"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-6 h-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+        </div>
+        <!-- Menu Items -->
+        <div
+          id="nav-content"
+          class="hidden w-full pt-6 lg:items-center lg:w-auto lg:block lg:pt-0"
+        >
+          <ul class="uppercase text-white lg:flex flex-1">
+            <li>
+              <a
+                class="inline-block py-2 px-4 text-gray-400 lg:py-0 hover:text-white"
+                href="#"
+                >Start</a
+              >
+            </li>
+            <li>
+              <a
+                class="inline-block py-2 lg:py-0 px-4 text-gray-400 hover:text-white"
+                href="#"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a
+                class="inline-block py-2 lg:py-0 px-4 text-gray-400 hover:text-white"
+                href="#"
+                >Products</a
+              >
+            </li>
+            <li>
+              <a
+                class="inline-block py-2 lg:py-0 px-4 text-gray-400 hover:text-white"
+                href="#"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="hero absolute inset-0 sm:hidden">
+        <img
+          class="w-full h-full object-cover object-center"
+          src="img/david-edelstein-N4DbvTUDikw-unsplash.jpg"
+          alt=""
+        />
+      </div>
+      <div class="hero absolute inset-0 hidden sm:block">
+        <img
+          class="w-full h-full object-cover object-center"
+          src="img/background.jpg"
+          alt=""
+        />
+      </div>
+    </header>
+    <div class="container my-6">
+      <ul class="flex text-gray-300 justify-center md:justify-start md:ml-24">
+        <li class="text-gray-300 pr-2">New Projects</li>
+        <li class="pr-2">|</li>
+        <li class="text-orange-500 pr-2">All Projects</li>
+      </ul>
+    </div>
+
+    <div class="container flex mx-auto items-center">
+      <button
+        class="w-16 h-16 text-gray-300 hidden md:block"
+        id="prev-btn"
+        type="button"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15.75 19.5L8.25 12l7.5-7.5"
+          />
+        </svg>
+      </button>
+
+      <div class="container mx-auto mb-16">
+        <div
+          id="container"
+          class="flex flex-col items-stretch justify-start space-y-4 md:flex-row md:overflow-hidden md:flex-nowrap md:space-y-0"
+        >
+          <div class="flex flex-shrink-0">
+            <a href="#" class="relative group block mx-2">
+              <div
+                class="absolute inset-0 hidden bg-black opacity-75 group-hover:flex flex-col justify-end text-white p-4"
+              >
+                <h3 class="text-lg mb-2">Number 1</h3>
+                <p class="leading-normal select-none">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Doloribus eveniet
+                </p>
+              </div>
+              <img class="w-60" src="img/background (1).jpg" alt="" />
+            </a>
+          </div>
+          <div class="flex flex-shrink-0">
+            <a href="#" class="relative group block mx-2">
+              <div
+                class="absolute inset-0 hidden bg-black opacity-75 group-hover:flex flex-col justify-end text-white p-4"
+              >
+                <h3 class="text-lg mb-2">Number 1</h3>
+                <p class="leading-normal select-none">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Doloribus eveniet
+                </p>
+              </div>
+              <img class="w-60" src="img/background (1).jpg" alt="" />
+            </a>
+          </div>
+          <div class="flex flex-shrink-0">
+            <a href="#" class="relative group block mx-2">
+              <div
+                class="absolute inset-0 hidden bg-black opacity-75 group-hover:flex flex-col justify-end text-white p-4"
+              >
+                <h3 class="text-lg mb-2">Number 1</h3>
+                <p class="leading-normal select-none">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Doloribus eveniet
+                </p>
+              </div>
+              <img class="w-60" src="img/background (1).jpg" alt="" />
+            </a>
+          </div>
+          <div class="flex flex-shrink-0">
+            <a href="#" class="relative group block mx-2">
+              <div
+                class="absolute inset-0 hidden bg-black opacity-75 group-hover:flex flex-col justify-end text-white p-4"
+              >
+                <h3 class="text-lg mb-2">Number 1</h3>
+                <p class="leading-normal select-none">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Doloribus eveniet
+                </p>
+              </div>
+              <img class="w-60" src="img/background (1).jpg" alt="" />
+            </a>
+          </div>
+          <div class="flex flex-shrink-0">
+            <a href="#" class="relative group block mx-2">
+              <div
+                class="absolute inset-0 hidden bg-black opacity-75 group-hover:flex flex-col justify-end text-white p-4"
+              >
+                <h3 class="text-lg mb-2">Number 1</h3>
+                <p class="leading-normal select-none">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Doloribus eveniet
+                </p>
+              </div>
+              <img class="w-60" src="img/background (1).jpg" alt="" />
+            </a>
+          </div>
+          <div class="flex flex-shrink-0">
+            <a href="#" class="relative group block mx-2">
+              <div
+                class="absolute inset-0 hidden bg-black opacity-75 group-hover:flex flex-col justify-end text-white p-4"
+              >
+                <h3 class="text-lg mb-2">Number 1</h3>
+                <p class="leading-normal select-none">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Doloribus eveniet
+                </p>
+              </div>
+              <img class="w-60" src="img/background (1).jpg" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <button
+        class="w-16 h-16 text-gray-300 hidden md:block"
+        id="next-btn"
+        type="button"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M8.25 4.5l7.5 7.5-7.5 7.5"
+          />
+        </svg>
+      </button>
+    </div>
+    <!-- Nav Toggle -->
+    <script>
+      document.getElementById("nav-toggle").onclick = function () {
+        document.getElementById("nav-content").classList.toggle("hidden");
+      };
+    </script>
+    <!-- Slider Controls -->
+    <script>
+      var button_next = document.getElementById("next-btn");
+      button_next.onclick = function () {
+        var container = document.getElementById("container");
+        sideScroll(container, "right", 25, 300, 50);
+      };
+      var button_prev = document.getElementById("prev-btn");
+      button_prev.onclick = function () {
+        var container = document.getElementById("container");
+        sideScroll(container, "left", 25, 300, 50);
+      };
+      function sideScroll(element, direction, speed, distance, step) {
+        scrollAmount = 0;
+        var slideTimer = setInterval(function () {
+          if (direction == "left") {
+            element.scrollLeft -= step;
+          } else {
+            element.scrollLeft += step;
+          }
+          scrollAmount += step;
+          if (scrollAmount >= distance) {
+            window.clearInterval(slideTimer);
+          }
+        }, speed);
+      }
+    </script>
+  </body>
+</html>

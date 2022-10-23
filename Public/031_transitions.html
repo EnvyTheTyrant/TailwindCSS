@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/tailwind.css" />
+    <title>Transition</title>
+  </head>
+  <body class="p-12">
+    <button
+      class="transition-all ease-int-out duration-700 bg-indigo-500 hover:bg-purple-500 py-2 px-6 rounded font-semibold text-gray-100 hover:shadow-lg transform hover:-translate-y-1 hover:scale-110"
+    >
+      Enter
+    </button>
+    <br /><br />
+    <!-- Transition Duration -->
+    <button
+      class="bg-indigo-500 mx-10 py-2 px-6 rounded font-semibold text-gray-100 transform hover:scale-110 duration-200 ease-in-out"
+    >
+      Enter
+    </button>
+    <button
+      class="bg-indigo-500 mx-10 py-2 px-6 rounded font-semibold text-gray-100 transform hover:scale-110 duration-500 ease-in-out"
+    >
+      Enter
+    </button>
+    <button
+      class="bg-indigo-500 mx-10 py-2 px-6 rounded font-semibold text-gray-100 transform hover:scale-110 duration-1000 ease-in-out"
+    >
+      Enter
+    </button>
+    <br /><br />
+    <!-- Transition Timing -->
+    <div
+      class="bg-red-500 w-1/4 h-8 transform hover:translate-x-full transition duration-1000 ease-in"
+    ></div>
+    <div
+      class="bg-green-500 w-1/4 h-8 transform hover:translate-x-full transition duration-1000 ease-out"
+    ></div>
+    <div
+      class="bg-blue-500 w-1/4 h-8 transform hover:translate-x-full transition duration-1000 ease-in-out"
+    ></div>
+    <br /><br />
+    <!-- Transition Delay -->
+    <div
+      class="bg-red-500 w-1/4 h-8 transform hover:translate-x-full transition duration-500 delay-200 ease-in"
+    ></div>
+    <div
+      class="bg-green-500 w-1/4 h-8 transform hover:translate-x-full transition duration-500 delay-500 ease-out"
+    ></div>
+    <div
+      class="bg-blue-500 w-1/4 h-8 transform hover:translate-x-full transition duration-500 delay-1000 ease-in-out"
+    ></div>
+    <!-- <button
+      class="bg-indigo-500 py-2 px-6 rounded font-semibold text-gray-100"
+    >Enter</button> -->
+  </body>
+</html>
