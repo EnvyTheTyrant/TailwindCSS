@@ -23,11 +23,46 @@
   z-index: -10;
 }
 
+.movie-card-container {
+  @apply flex flex-shrink-0;
+}
+
+.movie-card-link {
+  @apply relative  block mx-2;
+}
+
+.movie-card-content {
+  @apply absolute inset-0 hidden bg-black opacity-75  flex-col justify-end text-white p-4;
+}
+
+.movie-card-title {
+  @apply text-2xl mb-2;
+}
+
+.movie-card-text {
+  @apply leading-normal select-none;
+}
+
+.trailer {
+  height: 300px;
+}
+
+.btn-primary {
+  @apply bg-transparent uppercase border border-orange-600 text-orange-600 px-10 py-3 inline-block;
+}
+
+.btn-primary:hover {
+  @apply bg-orange-600 text-white cursor-pointer;
+}
+
 @screen md {
   .btn-teal {
     @apply text-lg;
   }
   .header {
+    height: 650px;
+  }
+  .trailer {
     height: 650px;
   }
 }

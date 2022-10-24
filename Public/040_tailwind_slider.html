@@ -8,7 +8,9 @@
     <title>Tailwind Slider</title>
   </head>
   <body class="bg-gray-900 font-sans leading-normal tracking-normal">
+    <!-- Menu Begin -->
     <header class="header relative overflow-hidden">
+      <!-- Nav Begin -->
       <nav
         class="bg-gray-800 w-full p-6 z-10 top-0 flex flex-wrap flex-row justify-between items-center bg-opacity-50"
       >
@@ -76,21 +78,33 @@
           </ul>
         </div>
       </nav>
+      <!-- Nav End -->
+
+      <!-- Hero SM Begin -->
       <div class="hero absolute inset-0 sm:hidden">
         <img
           class="w-full h-full object-cover object-center"
-          src="img/david-edelstein-N4DbvTUDikw-unsplash.jpg"
+          src="./img/movie_bg.jpeg"
           alt=""
         />
       </div>
+      <!-- Hero SM End -->
+
+      <!-- Hero MD Begin -->
       <div class="hero absolute inset-0 hidden sm:block">
-        <img
+        <video
           class="w-full h-full object-cover object-center"
-          src="img/background.jpg"
-          alt=""
-        />
+          src="./img/AVATAR 2 - NEW TRAILER (2022) 20th Century Studios _ Disney+ (HD).mp4"
+          autoplay
+          muted
+          loop
+        ></video>
       </div>
+      <!-- Hero MD End -->
     </header>
+    <!-- Menu End -->
+
+    <!-- Little Text Begin -->
     <div class="container my-6">
       <ul class="flex text-gray-300 justify-center md:justify-start md:ml-24">
         <li class="text-gray-300 pr-2">New Projects</li>
@@ -98,8 +112,11 @@
         <li class="text-orange-500 pr-2">All Projects</li>
       </ul>
     </div>
+    <!-- Little Text End -->
 
+    <!-- Carousel Begin -->
     <div class="container flex mx-auto items-center">
+      <!-- Prev Button Begin -->
       <button
         class="w-16 h-16 text-gray-300 hidden md:block"
         id="prev-btn"
@@ -119,12 +136,15 @@
           />
         </svg>
       </button>
+      <!-- Prev Button End -->
 
+      <!-- Carousel Container Begin -->
       <div class="container mx-auto mb-16">
         <div
           id="container"
           class="flex flex-col items-stretch justify-start space-y-4 md:flex-row md:overflow-hidden md:flex-nowrap md:space-y-0"
         >
+          <!-- Carousel Items Begin -->
           <div class="flex flex-shrink-0">
             <a href="#" class="relative group block mx-2">
               <div
@@ -136,7 +156,7 @@
                   Doloribus eveniet
                 </p>
               </div>
-              <img class="w-60" src="img/background (1).jpg" alt="" />
+              <img class="w-60" src="./img/movie_poster (1).jpg" alt="" />
             </a>
           </div>
           <div class="flex flex-shrink-0">
@@ -150,7 +170,7 @@
                   Doloribus eveniet
                 </p>
               </div>
-              <img class="w-60" src="img/background (1).jpg" alt="" />
+              <img class="w-60" src="./img/movie_poster (2).jpg" alt="" />
             </a>
           </div>
           <div class="flex flex-shrink-0">
@@ -164,7 +184,7 @@
                   Doloribus eveniet
                 </p>
               </div>
-              <img class="w-60" src="img/background (1).jpg" alt="" />
+              <img class="w-60" src="./img/movie_poster (3).jpg" alt="" />
             </a>
           </div>
           <div class="flex flex-shrink-0">
@@ -178,7 +198,7 @@
                   Doloribus eveniet
                 </p>
               </div>
-              <img class="w-60" src="img/background (1).jpg" alt="" />
+              <img class="w-60" src="./img/movie_poster (4).jpg" alt="" />
             </a>
           </div>
           <div class="flex flex-shrink-0">
@@ -192,7 +212,7 @@
                   Doloribus eveniet
                 </p>
               </div>
-              <img class="w-60" src="img/background (1).jpg" alt="" />
+              <img class="w-60" src="./img/movie_poster (5).jpg" alt="" />
             </a>
           </div>
           <div class="flex flex-shrink-0">
@@ -206,12 +226,15 @@
                   Doloribus eveniet
                 </p>
               </div>
-              <img class="w-60" src="img/background (1).jpg" alt="" />
+              <img class="w-60" src="./img/movie_poster (6).jpg" alt="" />
             </a>
           </div>
+          <!-- Carousel Items End -->
         </div>
       </div>
+      <!-- Carousel Container End -->
 
+      <!-- Next Button Begin -->
       <button
         class="w-16 h-16 text-gray-300 hidden md:block"
         id="next-btn"
@@ -231,14 +254,19 @@
           />
         </svg>
       </button>
+      <!-- Next Button End -->
     </div>
-    <!-- Nav Toggle -->
+    <!-- Carousel End -->
+
+    <!-- Nav Toggle Begin -->
     <script>
       document.getElementById("nav-toggle").onclick = function () {
         document.getElementById("nav-content").classList.toggle("hidden");
       };
     </script>
-    <!-- Slider Controls -->
+    <!-- Nav Toggle End -->
+
+    <!-- Slider Controls Begin -->
     <script>
       var button_next = document.getElementById("next-btn");
       button_next.onclick = function () {
@@ -265,5 +293,6 @@
         }, speed);
       }
     </script>
+    <!-- Slider Controls End -->
   </body>
 </html>

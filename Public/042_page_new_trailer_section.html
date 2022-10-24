@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/tailwind.css" />
+    <title>Tailwind Slider</title>
+  </head>
+  <body class="bg-black font-sans leading-normal tracking-normal">
+    <!-- Menu Begin -->
+    <header class="header relative overflow-hidden">
+      <!-- Nav Begin -->
+      <nav
+        class="bg-gray-800 w-full p-6 z-10 top-0 flex flex-wrap flex-row justify-between items-center bg-opacity-50"
+      >
+        <div class="flex flex-row items-center flex-shrink-0 text-white">
+          <img src="img/Logo.png" class="w-8" alt="" />
+          <a class="uppercase pl-3 font-normal text-2xl" href="#"
+            >Dulguun Digital</a
+          >
+        </div>
+        <div class="block lg:hidden">
+          <button
+            id="nav-toggle"
+            class="border rounded-full text-gray-400 p-2 border-gray-500 hover:text-white"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-6 h-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            </svg>
+          </button>
+        </div>
+        <!-- Menu Items -->
+        <div
+          id="nav-content"
+          class="hidden w-full pt-6 lg:items-center lg:w-auto lg:block lg:pt-0"
+        >
+          <ul class="uppercase text-white lg:flex flex-1">
+            <li>
+              <a
+                class="inline-block py-2 px-4 text-gray-400 lg:py-0 hover:text-white"
+                href="#"
+                >Start</a
+              >
+            </li>
+            <li>
+              <a
+                class="inline-block py-2 lg:py-0 px-4 text-gray-400 hover:text-white"
+                href="#"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a
+                class="inline-block py-2 lg:py-0 px-4 text-gray-400 hover:text-white"
+                href="#"
+                >Products</a
+              >
+            </li>
+            <li>
+              <a
+                class="inline-block py-2 lg:py-0 px-4 text-gray-400 hover:text-white"
+                href="#"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Nav End -->
+
+      <!-- Hero SM Begin -->
+      <div class="hero absolute inset-0 sm:hidden">
+        <img
+          class="w-full h-full object-cover object-center"
+          src="./img/movie_bg.jpeg"
+          alt=""
+        />
+      </div>
+      <!-- Hero SM End -->
+
+      <!-- Hero MD Begin -->
+      <div class="hero absolute inset-0 hidden sm:block">
+        <video
+          class="w-full h-full object-cover object-center"
+          src="./img/AVATAR 2 - NEW TRAILER (2022) 20th Century Studios _ Disney+ (HD).mp4"
+          autoplay
+          muted
+          loop
+        ></video>
+      </div>
+      <!-- Hero MD End -->
+    </header>
+    <!-- Menu End -->
+
+    <!-- Little Text Begin -->
+    <div class="container my-6">
+      <ul class="flex text-gray-300 justify-center md:justify-start md:ml-24">
+        <li class="text-gray-300 pr-2">New Projects</li>
+        <li class="pr-2">|</li>
+        <li class="text-orange-500 pr-2">All Projects</li>
+      </ul>
+    </div>
+    <!-- Little Text End -->
+
+    <!-- Carousel Begin -->
+    <div class="container flex mx-auto items-center">
+      <!-- Prev Button Begin -->
+      <button
+        class="w-16 h-16 text-gray-300 hidden md:block"
+        id="prev-btn"
+        type="button"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15.75 19.5L8.25 12l7.5-7.5"
+          />
+        </svg>
+      </button>
+      <!-- Prev Button End -->
+
+      <!-- Carousel Container Begin -->
+      <div class="container mx-auto mb-16">
+        <div
+          id="container"
+          class="flex flex-col items-center w-full space-y-4 md:flex-row md:overflow-hidden md:flex-nowrap md:space-y-0"
+        >
+          <!-- Carousel Items Begin -->
+          <div class="movie-card-container">
+            <a href="#" class="movie-card-link group">
+              <div class="movie-card-content group-hover:flex">
+                <h3 class="movie-card-title">Black Panther</h3>
+                <p class="movie-card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Doloribus eveniet
+                </p>
+              </div>
+              <img class="w-60" src="./img/movie_poster (1).jpg" alt="" />
+            </a>
+          </div>
+          <!---------------------------------------------------------------------------------->
+          <div class="movie-card-container">
+            <a href="#" class="movie-card-link group">
+              <div class="movie-card-content group-hover:flex">
+                <h3 class="movie-card-title">Spider-Man: No Way Home</h3>
+                <p class="movie-card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Doloribus eveniet
+                </p>
+              </div>
+              <img class="w-60" src="./img/movie_poster (2).jpg" alt="" />
+            </a>
+          </div>
+          <!---------------------------------------------------------------------------------->
+          <div class="movie-card-container">
+            <a href="#" class="movie-card-link group">
+              <div class="movie-card-content group-hover:flex">
+                <h3 class="movie-card-title">Meg</h3>
+                <p class="movie-card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Doloribus eveniet
+                </p>
+              </div>
+              <img class="w-60" src="./img/movie_poster (3).jpg" alt="" />
+            </a>
+          </div>
+          <!---------------------------------------------------------------------------------->
+          <div class="movie-card-container">
+            <a href="#" class="movie-card-link group">
+              <div class="movie-card-content group-hover:flex">
+                <h3 class="movie-card-title">Star Wars: The Last Jedi</h3>
+                <p class="movie-card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Doloribus eveniet
+                </p>
+              </div>
+              <img class="w-60" src="./img/movie_poster (4).jpg" alt="" />
+            </a>
+          </div>
+          <!---------------------------------------------------------------------------------->
+          <div class="movie-card-container">
+            <a href="#" class="movie-card-link group">
+              <div class="movie-card-content group-hover:flex">
+                <h3 class="movie-card-title">Avengers: End Game</h3>
+                <p class="movie-card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Doloribus eveniet
+                </p>
+              </div>
+              <img class="w-60" src="./img/movie_poster (5).jpg" alt="" />
+            </a>
+          </div>
+          <!---------------------------------------------------------------------------------->
+          <div class="movie-card-container">
+            <a href="#" class="movie-card-link group">
+              <div class="movie-card-content group-hover:flex">
+                <h3 class="movie-card-title">Joker</h3>
+                <p class="movie-card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Doloribus eveniet
+                </p>
+              </div>
+              <img class="w-60" src="./img/movie_poster (6).jpg" alt="" />
+            </a>
+          </div>
+          <!-- Carousel Items End -->
+        </div>
+      </div>
+      <!-- Carousel Container End -->
+
+      <!-- Next Button Begin -->
+      <button
+        class="w-16 h-16 text-gray-300 hidden md:block"
+        id="next-btn"
+        type="button"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M8.25 4.5l7.5 7.5-7.5 7.5"
+          />
+        </svg>
+      </button>
+      <!-- Next Button End -->
+    </div>
+    <!-- Carousel End -->
+
+    <!-- About Section Begin -->
+    <div class="container mx-auto py-8 text-white text-center">
+      <div class="text-gray-300 mb-4 text-base md:text-lg">
+        Movie <span>|</span> TV series <span>|</span> Animation
+      </div>
+      <h2 class="text-2xl md:text-5xl font-sans font-bold mb-6">
+        About Dulguun Digital
+      </h2>
+      <p class="max-width-md opacity-75 mx-auto">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores illo
+        non nulla quia sint explicabo corporis quisquam eveniet impedit magnam
+        temporibus voluptas tenetur, maxime consectetur hic vero provident, nisi
+        officia. Deserunt consequuntur ex accusantium maiores amet saepe
+        provident sint adipisci.
+      </p>
+      <a href="#" class="text-orange-300 my-4 inline-block">More...</a>
+    </div>
+    <!-- About Section End -->
+
+    <!-- New Trailer Section Begin -->
+    <div class="trailer w-full relative flex flex-wrap items-center">
+      <div class="w-full absolute inset-0 h-full opacity-75">
+        <img
+          class="w-full object-cover h-full"
+          src="./img/movie_poster (7).jpg"
+          alt=""
+        />
+      </div>
+      <div
+        class="container mx-auto text-center text-white w-full flex flex-wrap z-10"
+      >
+        <h3
+          class="text-3xl font-sans font-bold mb-4 w-full leading-tight md:text-5xl"
+        >
+          Coming Soon
+        </h3>
+        <div class="mx-auto mb-8 md:mb-16">
+          <a
+            href="#"
+            class="inline-flex items-center justify-center text-white w-auto hover:opacity-60 space-x-1"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.971l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z"
+              />
+            </svg>
+
+            <span>Play Video</span>
+          </a>
+        </div>
+        <div class="w-full">
+          <a
+            href=""
+            class="inline-flex items-center justify-center text-white border bg-transparent px-8 py-3 rounded hover:bg-white hover:text-black"
+            >All Trailers</a
+          >
+        </div>
+      </div>
+    </div>
+    <!-- New Trailer Section End -->
+
+    <!-- Nav Toggle Begin -->
+    <script>
+      document.getElementById("nav-toggle").onclick = function () {
+        document.getElementById("nav-content").classList.toggle("hidden");
+      };
+    </script>
+    <!-- Nav Toggle End -->
+
+    <!-- Slider Controls Begin -->
+    <script>
+      var button_next = document.getElementById("next-btn");
+      button_next.onclick = function () {
+        var container = document.getElementById("container");
+        sideScroll(container, "right", 25, 300, 50);
+      };
+      var button_prev = document.getElementById("prev-btn");
+      button_prev.onclick = function () {
+        var container = document.getElementById("container");
+        sideScroll(container, "left", 25, 300, 50);
+      };
+      function sideScroll(element, direction, speed, distance, step) {
+        scrollAmount = 0;
+        var slideTimer = setInterval(function () {
+          if (direction == "left") {
+            element.scrollLeft -= step;
+          } else {
+            element.scrollLeft += step;
+          }
+          scrollAmount += step;
+          if (scrollAmount >= distance) {
+            window.clearInterval(slideTimer);
+          }
+        }, speed);
+      }
+    </script>
+    <!-- Slider Controls End -->
+  </body>
+</html>
